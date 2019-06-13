@@ -18,7 +18,7 @@ class Students extends Person{
         this.previousBackground = data.previousBackground;
         this.className = data.className;
         this.favSubjects = data.favSubjects;
-        this.grade = Math.round(Math.random() * 100);
+        this.grade = Math.round(Math.random() * 99) + 1;
     };
     listSubjects(){
         for(let i = 0; i < this.favSubjects.length; ++ i){
