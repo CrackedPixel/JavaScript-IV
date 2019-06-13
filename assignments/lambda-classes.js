@@ -144,3 +144,19 @@ console.log(ChristianI.debugCode(Anthony, Anthony.favSubjects[1]));
 console.log("#####################");
 console.log("### Stretch Goals ###");
 console.log("#####################");
+console.log(Anthony.graduate());
+let nTimes = 0;
+while (Anthony.grade < 70 && nTimes < 8){
+    WorkHard();
+    console.log(Anthony.graduate());
+    nTimes++;
+}
+if (Anthony.grade < 70){ // I added this just so the console would never get flooded. No one should give up on their goals!
+    console.log(`${Anthony.name} has not been successful in graduating and should persue a different career`);
+}
+
+
+function WorkHard(){ // This isn't necessary as these 2 lines could be put into the While loop. I just wanted to show I know how to do it
+    console.log(ChristianI.grade(Anthony, Anthony.favSubjects[1]));
+    console.log(DanLevy.grade(Anthony, Anthony.favSubjects[0]));
+}
